@@ -1,18 +1,46 @@
-// question#12a: Create a function that receives an array of numbers and returns an array containing only the positive numbers
-function positiveArray(array) {
-    const positiveArr = [];
+// #Q13: Find the maximum number in an array of numbers
+function maxNumber(array) {
+    let max = array[0];
     for (let i = 0; i < array.length; i++) {
         const element = array[i];
-        if (element>0) {
-            positiveArr.push(element);
-        }
-        
+        if (element>max) {
+            max = element;
+        }        
     }
-    return positiveArr;
+    return max
 }
 
-const getPositive = positiveArray([-5, 10, -3, 12, -9, 5, 90, 0, 1]);
-console.log(getPositive);
+
+const getMax = maxNumber([5, 10, -3, 12, -9, 5, 90, 0, 1]);
+console.log(getMax);
+
+
+// #Q13: Find the maximum number in an array of numbers
+// const arr = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+// let max = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//         if (arr[i]>max) {
+//             max = arr[i];
+//         }
+    
+// }
+// console.log(max);
+
+
+// Question#12a: Create a function that receives an array of numbers and returns an array containing only the positive numbers
+// function positiveArray(array) {
+//     const positiveArr = [];
+//     for (let i = 0; i < array.length; i++) {
+//         const element = array[i];
+//         if (element>0) {
+//             positiveArr.push(element);
+//         }
+        
+//     }
+//     return positiveArr;
+// }
+// const getPositive = positiveArray([-5, 10, -3, 12, -9, 5, 90, 0, 1]);
+// console.log(getPositive);
 
 
 // question#12: Filter only the positive numbers from an array
