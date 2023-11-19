@@ -1,18 +1,28 @@
-// #Q13: Find the maximum number in an array of numbers
-function maxNumber(array) {
-    let max = array[0];
-    for (let i = 0; i < array.length; i++) {
-        const element = array[i];
-        if (element>max) {
-            max = element;
-        }        
-    }
-    return max
+// Q#14: Print the first 10 Fibonacci numbers without recursion
+let f1 = 0;
+let f2 = 1;
+
+for (let i = 0; i < 10; i++) {
+        ;
+    
 }
 
 
-const getMax = maxNumber([5, 10, -3, 12, -9, 5, 90, 0, 1]);
-console.log(getMax);
+// #Q13: Find the maximum number in an array of numbers
+// function maxNumber(array) {
+//     let max = array[0];
+//     for (let i = 0; i < array.length; i++) {
+//         const element = array[i];
+//         if (element>max) {
+//             max = element;
+//         }        
+//     }
+//     return max
+// }
+
+
+// const getMax = maxNumber([5, 10, -3, 12, -9, 5, 90, 0, 1]);
+// console.log(getMax);
 
 
 // #Q13: Find the maximum number in an array of numbers
