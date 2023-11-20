@@ -1,11 +1,53 @@
-// Q#14: Print the first 10 Fibonacci numbers without recursion
-let f1 = 0;
-let f2 = 1;
-
-for (let i = 0; i < 10; i++) {
-        ;
-    
+// Q #17: Calculate the sum of digits of a positive integer number
+function sumIntegers(number) {
+        let string = number.toString();
+        let sum = 0;
+        for (let char of string) {
+                var number = parseInt(char);
+                sum += number;               
+        }
+        return sum
 }
+
+console.log(sumIntegers(123456789));
+
+
+// #16: Create a function that will return a Boolean specifying if a number is prime
+// function isPrime(n) {
+
+//         if (n<2) {
+//         return false; 
+//         }
+//         if (n==2) {
+//         return true; 
+//         }
+         
+//         for (let i = 2; i < n; i++) {
+//                 if (n%i === 0) {
+//                         return false
+//                 }
+                               
+//         }
+//         return true 
+// }
+
+// console.log(isPrime(31));;
+
+
+// Q#14: Print the first 10 Fibonacci numbers without recursion
+// let first = 0;
+// let second = 1;
+// let next;
+// let arr = []
+
+// for (let i = 2; i < 10; i++) {
+//         let next = first + second;
+//         // console.log(next);
+//         arr.push(next);
+//         first = second;
+//          second  =  next;        
+// }
+// console.log(arr);
 
 
 // #Q13: Find the maximum number in an array of numbers
