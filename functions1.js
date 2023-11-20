@@ -1,12 +1,15 @@
 // Q #17: Calculate the sum of digits of a positive integer number
 function sumIntegers(number) {
         let string = number.toString();
+        let array = []
+        
         let sum = 0;
         for (let char of string) {
+                
                 var number = parseInt(char);
                 sum += number;               
         }
-        return sum
+        return sum;
 }
 
 console.log(sumIntegers(123456789));
